@@ -27,6 +27,7 @@ section {
   border-radius: 25px;
   margin: 0 auto;
   box-shadow: 2px 25px 5px #888888 ;
+  display: block;
 }
 
 header {
@@ -732,6 +733,12 @@ option {
 
 .display-message {
   display: none;
+  text-align: center;
+  font-size: 26px;
+}
+
+.display-message h4 {
+  color: black;
 }
 
 @media (min-width: 1130px) and (max-width: 1180px) {
@@ -1083,7 +1090,14 @@ option {
 
 
 @media (max-width: 1000px) {
-  body {
+  section {
     display: none;
+  }
+
+  .display-message {
+    display: block;
+    text-align: center;
+  color: black;
+  font-size: 26px;
   }
 }
