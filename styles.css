@@ -19,6 +19,7 @@ body {
   margin: 40px auto;
   background: #F3F9C5;
   font-family: 'Abel', sans-serif;
+  overflow-x: hidden;
 }
 
 section {
@@ -26,7 +27,7 @@ section {
   height: 870px;
   border-radius: 25px;
   margin: 0 auto;
-  box-shadow: 2px 25px 5px #888888 ;
+  box-shadow: 1px 25px 1px #888888 ;
   display: block;
 }
 
