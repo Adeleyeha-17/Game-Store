@@ -1,0 +1,1082 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+/* #cad686 */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1220px;
+  margin: 40px auto;
+  background: #F3F9C5;
+  font-family: 'Abel', sans-serif;
+}
+
+section {
+  background: #252945;
+  height: 870px;
+  border-radius: 25px;
+  margin: 0 auto;
+  box-shadow: 2px 25px 5px #888888 ;
+}
+
+header {
+  padding-top: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+h4 {
+  color: white;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.icons {
+  width: 35px;
+  height: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all .5s ease-in-out;
+}
+
+.icons:hover {
+  color: #cad686;
+}
+
+.profile-img {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#nav-items-end {
+  position: relative;
+}
+
+.fi-rs-joystick {
+  color: #cad686;
+}
+
+#message-noti {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #cad686;
+  border: 1px solid white;
+  position: absolute;
+  left: 84px;
+  top: 8px;
+}
+
+#body-container {
+  display: flex;
+  gap: 20px;
+  background: #0b1124;
+  border-radius: 35px;
+  padding: 45px;
+  max-width: 1115px;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.wider-width {
+  width: 70%;
+  height: 100%;
+}
+
+#border-line {
+  border: 1px solid #505465;
+  height: 618px;
+}
+
+.little-width {
+  width: 30%;
+  height: 100%;
+}
+
+div#game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#tournaments {
+  display: flex;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+div#tournaments h5:nth-last-child(1) {
+  margin-left: 15px;
+  color: #505465;
+}
+
+select {
+  border: 1px solid #cad686;
+  background: transparent;
+  color: #cad686;
+  border-radius: 25px;
+  height: 30px;
+  width: 90px;
+  padding: 6px 10px;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+.down-arrow {
+  color: #cad686;
+  position: relative;
+  top: 4px;
+  left: 86.4px;
+}
+
+.down-arrow-2 {
+  color: #cad686;
+  position: relative;
+  top: 4px;
+  left: 76.8px;
+}
+
+option {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #0b1124;
+  border: none;
+  outline: none;
+}
+
+#game-level {
+  margin-right: -50px;
+  margin-left: -10px;
+}
+
+.select-section {
+  margin-left: 1px;
+}
+
+#search-input {
+  background: transparent;
+  border: 1px solid #505465;
+  color: #fff;
+  height: 30px;
+  width: 192px;
+  border-radius: 15px;
+  margin-right: -100px;
+  padding: 8px 36px;
+  position: relative;
+  font-size: 12px;
+}
+
+.search {
+  background: #0b1124;
+  color: #fff;
+  position: relative;
+  left: -85px;
+  top: 2px;
+  cursor: pointer;
+}
+
+.button {
+  background: none;
+  border: none
+}
+
+.games-type {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.video-section {
+  position: relative;
+  margin-top: 15px;
+  width: 70%;
+}
+
+.video-section video {
+  width: 424px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.controls {
+  position: relative;
+  left: 128px;
+  top: -50px;
+}
+
+.control {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background: #505465;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.top {
+  position: relative;
+  top: -13px;
+}
+
+.play {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  top: -15px;
+  background: #cad686;
+  color: black;
+}
+
+.video-length {
+  color: #fff;
+  position: relative;
+  left: 50px;
+  top: -10px;
+}
+
+#streamer-numbers {
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 209px;
+  left: 20px;
+  text-align: center;
+}
+
+.viewers {
+  background: transparent;
+  border: none;
+  color: #fff;
+  margin-right: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.games-stack {
+  margin-left: -255px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.game-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 16px;
+  margin-left: 6px;
+}
+
+.games-title {
+  color: #fff;
+  font-size: 14px;
+}
+
+.game-dets {
+  display: flex;
+  margin-top: 7px;
+  /* align-items:center; */
+  color: #dfe2eb;
+}
+
+.game-dets span {
+  margin-right: 50px;
+  margin-left: 2px;
+  font-size: 13px;
+}
+
+.fi-rs-clock {
+  font-size: 10px;
+}
+
+.game-dets h4 {
+  font-size: 13px;
+  width: 60px;
+  height: 18px;
+  background: #4276ce;
+  color: #6ba2e7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  background: #252945;
+  border-radius: 18px;
+  height: 65px;
+  width: 230px;
+}
+
+#fantasy {
+  background: #f9a6cc;
+  color: #e1678f;
+}
+
+.active-clock {
+  color: #cad686;
+}
+
+#bottom-body-container {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  position: relative;
+}
+
+.trends {
+  width: 220px;
+  height: 220px;
+  border-radius: 25px;
+  background: #252945;
+  margin-top: 20px;
+}
+
+.trends::before {
+  content: "56";
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: 900;
+  color: #4874ef;
+}
+
+
+.tournaments {
+  margin-left: 44px;
+}
+
+.bottom-img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bottom-img:nth-child(1) {
+  position: relative;
+  top: -50px;
+  left: -25px;
+}
+
+.bottom-img:nth-child(2) {
+  position: relative;
+  top: 75px;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bottom-img:nth-child(3) {
+  position: relative;
+  top: -135px;
+  left: 36px;
+}
+
+.bottom-img:nth-child(4) {
+  position: relative;
+  top: -112px;
+  left: -60px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bottom-img:nth-child(5) {
+  position: relative;
+  top: 47px;
+  left: -10px;
+}
+
+.bottom-img:nth-child(6) {
+  position: relative;
+  top: -130px;
+  left: 190px;
+}
+
+.bottom-img:nth-child(7) {
+  position: relative;
+  top: 20px;
+  left: -20px;
+}
+
+#tournaments-section {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+}
+
+.game-card {
+  position: relative;
+}
+
+.tournaments-img {
+  width: 140px;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.viewers-num {
+  color: #d4d7d8;
+}
+
+.fi-rs-star {
+  color: yellow;
+}
+
+.no-star {
+  color: #4a4a4b;
+}
+
+.flame {
+  position: absolute;
+  top: 25px;
+  left: 98px;
+  transform: rotate(90deg);
+  background: #4a4a4b;
+  width: 45px;
+  border-radius: 20px;
+  display: flex;
+  gap: 5px;
+  color: #cfb144;
+  font-size: 14px;
+}
+
+.num-of-downloads {
+  color: white;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.parent-progress {
+  width: 90px;
+  height: 18px;
+  border-radius: 20px;
+  background: #4a4a4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-progress {
+  font-size: 14px;
+  background: #e6f38a;
+  height: 18px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -67px;
+  color: #4a4a4b;
+}
+
+.move-left {
+  margin-left: 20px;
+}
+
+#progress-percentage-1 {
+  width: 35px;
+}
+
+#progress-percentage-2 {
+  width: 55px;
+}
+
+#progress-percentage-3 {
+  width: 30px;
+}
+
+.game-play {
+  background: #4a4a4b;
+  color: #cad686;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.overlay {
+  background: rgba(170, 161, 148, .5);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -106px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .5s linear;
+}
+
+.game-card:hover .overlay {
+  opacity: 1;
+}
+
+#finance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  color: white;
+}
+
+.little-width h6 {
+  color: #7e7e8a;
+}
+
+#financial-analysis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#financial-chart {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 15px solid #505465;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#financial-chart h4:nth-child(1) {
+  color: #7e7e8a;
+}
+
+#financial-chart h4:nth-child(2) {
+  color: #cad686;
+  font-size: 28px;
+}
+
+.expenses-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.expenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.rounded-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.expense {
+  background: #e1678f;
+}
+
+.income {
+  background: #cad686;
+}
+
+.other {
+  background: #505465;
+}
+
+.gifts {
+  background: #4874ef;
+}
+
+.expenses-color {
+  color: #cad686;
+  font-size: 11px;
+}
+
+#analysis-button {
+  border: 2px solid #cad686;
+  color: #cad686;
+  background: transparent;
+  width: 140px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-left: 90px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+#analysis-button:hover {
+  color: #fff;
+  background: #cad686;
+}
+
+#notification-sect {
+  color: white;
+  margin-top: 10px;
+}
+
+#clash-of-clan {
+  width: 400px;
+  height: 400px;
+  transform: rotate(-10deg);
+}
+
+#update {
+  position: relative;
+  top: -170px;
+  left: 100px;
+  transform: rotate(-10deg);
+}
+
+#update,
+#update h4 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+#update h4 {
+  margin-left: 55px;
+  font-weight: bolder;
+}
+
+#update h5 {
+  margin-left: 15px;
+}
+
+#update h5:nth-of-type(2) {
+  margin-left: 10px;
+}
+
+
+#update-btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  background: #4778ee;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+#update-btn:hover {
+  background: transparent;
+  color: #000;
+  border: 2px solid #cad686;
+}
+
+.display-message {
+  display: none;
+}
+
+@media (min-width: 1130px) and (max-width: 1180px) {
+
+  body {
+    margin: 0 auto;
+  }
+
+  #body-container {
+    margin: 0 auto;
+    max-width: 1075px;
+  }
+
+  section {
+    margin: 0 auto;
+  }
+
+  #search-input {
+    margin-right: -60px;
+    position: relative;
+  }
+
+  .search {
+    position: relative;
+    left: -125px;
+  }
+
+  .games-stack {
+    margin-left: -245px;
+    margin-top: 15px;
+  }
+
+  .video-section video {
+    width: 394px;
+  }
+
+  #streamer-numbers {
+    top: 193px;
+  }
+
+  .tournaments-img {
+    width: 135px;
+    height: 220px;
+  }
+
+  .trends {
+    width: 210px;
+    height: 210px;
+  }
+
+  .bottom-img:nth-child(3) {
+    top: -125px;
+    left: 36px;
+  }
+
+  .bottom-img:nth-child(4) {
+    top: -102px;
+    left: -60px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .bottom-img:nth-child(5) {
+    top: 52px;
+    left: -10px;
+  }
+
+  .bottom-img:nth-child(6) {
+    left: 185px;
+  }
+
+  .bottom-img:nth-child(7) {
+    top: 20px;
+    left: -20px;
+  }
+
+  #tournaments-section {
+    gap: 12px;
+  }
+
+  #clash-of-clan {
+    width: 350px;
+    height: 370px;
+  }
+
+  #update {
+    position: relative;
+    top: -170px;
+    left: 85px;
+  }
+  
+  #update,
+  #update h4 {
+    margin-bottom: 10px;
+  }
+  
+  #update h4 {
+    margin-left: 55px;
+  }
+  
+  #update h5 {
+    margin-left: 7px;
+  }
+  
+  #update h5:nth-of-type(2) {
+    margin-left: -5px;
+  }
+
+  #update-btn {
+    margin-left: 20px;
+  }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1129px) {
+  #body-container {
+    max-width: 950px;
+  }
+
+  body {
+    margin: 30px auto;
+  }
+ 
+
+  #search-input {
+    margin-right: -6px;
+    position: relative;
+  }
+
+  .search {
+    position: relative;
+    left: -180px;
+  }
+
+  .games-stack {
+    margin-left: -195px;
+    margin-top: 15px;
+  }
+
+  .game-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .active {
+    height: 55px;
+    width: 220px;
+  }
+
+  .games-title {
+    font-size: 12px;
+  }
+
+  .game-dets {
+    margin-top: 3px;
+  }
+
+  .game-dets span {
+    margin-right: 50px;
+    margin-left: 1px;
+    font-size: 11px;
+  }
+
+  .fi-rs-clock {
+    font-size: 8px;
+  }
+
+  .fi-rs-stats {
+    margin-right: 5px;
+  }
+
+  .video-section {
+    margin-top: 25px;
+  }
+
+  .video-section video {
+    width: 334px;
+  }
+
+  .controls {
+    left: 100px;
+    top: -50px;
+  }
+
+  .control {
+    width: 30px;
+    height: 30px;
+  }
+
+  .top {
+    top: -13px;
+  }
+
+  .play {
+    width: 65px;
+    height: 65px;
+  }
+
+  .video-length {
+    left: 40px;
+    top: -13px;
+    font-size: 13px;
+  }
+
+  #streamer-numbers {
+    top: 155px;
+    font-size: 13px;
+  }
+
+  .tournaments-img {
+    width: 135px;
+    height: 220px;
+  }
+
+  .trends {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bottom-img:nth-child(2) {
+    top: 65px;
+    left: 45px;
+  }
+
+
+  .bottom-img:nth-child(3) {
+    top: -125px;
+    left: 36px;
+  }
+
+  .bottom-img:nth-child(4) {
+    top: -102px;
+    left: -60px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .bottom-img:nth-child(5) {
+    top: -12px;
+    left: 140px;
+  }
+
+  .bottom-img:nth-child(6) {
+    left: 125px;
+  }
+
+  .bottom-img:nth-child(7) {
+    top: 15px;
+    left: -70px;
+  }
+
+  #tournaments-section {
+    gap: 10px;
+  }
+
+  .tournaments-img {
+    width: 120px;
+    height: 200px;
+  }
+
+  .flame {
+    top: 25px;
+    left: 78px;
+  }
+
+
+  .progress {
+    gap: 3px;
+  }
+
+  .parent-progress {
+    width: 70px;
+    height: 14px;
+  }
+
+  .child-progress {
+    font-size: 12px;
+    height: 14px;
+    margin-left: -60px;
+  }
+
+  .move-left {
+    margin-left: 10px;
+  }
+
+  #progress-percentage-1 {
+    width: 30px;
+  }
+
+  #progress-percentage-2 {
+    width: 45px;
+  }
+
+  #progress-percentage-3 {
+    width: 25px;
+  }
+ 
+  #game-genre {
+    margin-left: -50px;
+  }
+
+  .down-arrow {
+    color: #cad686;
+    position: relative;
+    top: 4px;
+    left: 36.4px;
+  }
+
+  #analysis-button {
+    margin-left: 65px;
+  }
+
+  #update {
+    position: relative;
+    top: -170px;
+    left: 85px;
+  }
+  
+  #update,
+  #update h4 {
+    margin-bottom: 10px;
+  }
+  
+  #update h4 {
+    margin-left: 55px;
+  }
+  
+  #update h5 {
+    margin-left: 7px;
+  }
+  
+  #update h5:nth-of-type(2) {
+    margin-left: -5px;
+  }
+  
+
+  #clash-of-clan {
+    width: 350px;
+    height: 370px;
+  }
+
+  #update-btn {
+    width: 130px;
+    height: 40px;
+    margin-left: 30px;
+  }
+
+}

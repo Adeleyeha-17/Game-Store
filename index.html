@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="./images/left-logo.png">
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+  <title>Game Store</title>
+</head>
+
+<body >
+  <section class="display">
+    <header>
+      <nav>
+        <img src="./images/left-logo.png" alt="logo-img" class="logo" />
+
+        <ul class="nav-items">
+          <li>
+            <a href="#">
+              <i class="fi fi-rs-chart-pie-alt icons"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fi fi-rs-joystick icons"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fi fi-rs-stars icons"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fi fi-rs-stats icons"></i>
+            </a>
+          </li>
+          </i>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fi fi-rs-settings icons"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fi fi-rs-shield-check icons"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div id="nav-items-end">
+          <ul class="nav-items">
+            <li>
+              <img src="./images/logo.png" alt="profile-img" class="icons profile-img" />
+            </li>
+            <li>
+              <a href="#">
+                <i class="fi fi-rs-comment icons"></i>
+              </a>
+            </li>
+            <div id="message-noti"></div>
+          </ul>
+        </div>
+      </nav>
+</body>
+
+</html>
+</header>
+<div id="body-container">
+  <div class="wider-width">
+    <div id="game-header">
+      <div id="tournaments">
+        <h5>Today Tournament (3)</h5>
+        <h5>Swords (4)</h5>
+      </div>
+
+      <form class="search-bar">
+        <input type="text" id="search-input" placeholder="Game Search...">
+        <button type="submit" class="button">
+          <i class="fi fi-rs-search search"></i>
+        </button>
+      </form>
+
+      <div class="select-section">
+        <!-- Game Genre -->
+        <span>
+          <i class="fi fi-rs-caret-down down-arrow"></i>
+        </span>
+        <select name="genre" id="game-genre">
+          <option value="game-genre" selected>Genre</option>
+          <option value="action">Drama</option>
+          <option value="adventure">Fantasy</option>
+          <option value="strategy">Action</option>
+        </select>
+
+        <!-- Game Level -->
+        <span>
+          <i class="fi fi-rs-caret-down down-arrow-2"></i>
+        </span>
+        <select name="level" id="game-level">
+          <option value="game-level" selected>Level</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div></div>
+
+    </div>
+    <div class="games-type">
+      <div class="video-section">
+        <video src="./video/biomutant.mp4" id="video"></video>
+        <div id="streamer-numbers">
+          <button class="viewers">
+            <i class="fi fi-rs-eye" id="live-streamers"></i>
+          </button>
+          <span id="toggle-number">24.7k</span>
+        </div>
+
+        <div class="controls">
+          <button class="control top">
+            <i class="fi fi-rs-rotate-left" id="loop-button"></i>
+          </button>
+          <button class="control play">
+            <i class="fi fi-rs-play" id="play-button"></i>
+          </button>
+          <button class="control top">
+            <i class="fi fi-rs-volume" id="volume-button"></i>
+          </button>
+          <span class="video-length">0:00</span>
+        </div>
+      </div>
+      <div>
+
+        <div id="games">
+          <!-- GAME 1 -->
+          <a href="#">
+            <div class="games-stack">
+              <img src="./images/Watchdog-2.jpg" alt="Watchdog-2" class="game-img">
+              <div>
+                <h4 class="games-title">Watch Dogs 2</h4>
+                <div class="game-dets">
+                  <i class="fi fi-rs-clock">
+                    <span>18:00</span>
+                  </i>
+                  <h4>Drama</h4>
+                </div>
+              </div>
+            </div>
+
+          </a>
+
+          <!-- GAME 2 -->
+
+          <a href="#">
+            <div class="games-stack active">
+              <img src="./images/biomutant.jpg" alt="biomutant" class="game-img">
+              <div>
+                <h4 class="games-title">Biomutant</h4>
+                <div class="game-dets">
+                  <i class="fi fi-rs-clock active-clock">
+                    <span>20:30</span>
+                  </i>
+                  <h4 id="fantasy">Fantasy</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- GAME 3-->
+          <a href="#">
+            <div class="games-stack">
+              <img src="./images/titanfall.jpg" alt="titanfall" class="game-img">
+              <div>
+                <h4 class="games-title">Titanfall Robber 2</h4>
+                <div class="game-dets">
+                  <i class="fi fi-rs-clock">
+                    <span>22:00</span>
+                  </i>
+                  <h4>Drama</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- GAME 4 -->
+          <a href="#">
+            <div class="games-stack">
+              <img src="./images/clash.jpg" alt="clash-of-clans" class="game-img">
+              <div>
+                <h4 class="games-title">Clash Of Clans</h4>
+                <div class="game-dets">
+                  <i class="fi fi-rs-clock">
+                    <span>00:15</span>
+                  </i>
+                  <h4>Drama</h4>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom-body-container">
+      <div class="little-width">
+        <h5>Trends</h5>
+        <div class="trends">
+          <img src="./images/white walker1.jfif" alt="" class="bottom-img">
+          <img src="./images/mortal kmbat1.jpg" alt="" class="bottom-img">
+          <img src="./images/Clash-of-clans.jpeg" alt="" class="bottom-img">
+          <img src="./images/Roblox.jpeg" alt="" class="bottom-img">
+          <img src="./images/Fifa.jpeg" alt="" class="bottom-img">
+          <img src="./images/Fm23.jpeg" alt="" class="bottom-img">
+          <img src="./images/Marvel.jpeg" alt="" class="bottom-img">
+        </div>
+      </div>
+      <div class="wider-width tournaments">
+        <h5>Tournaments</h5>
+        <div id="tournaments-section">
+          <div class="game-card">
+            <i class="fi fi-rs-fire-flame-curved flame">
+              <span class="num-of-downloads">120</span>
+            </i>
+            <img src="./images/Assasins.jpg" alt="assasins" class="tournaments-img">
+            <div class="overlay">
+              <h5>Assasins</h5>
+              <h5 class="viewers-num">12.5k Viewers</h5>
+              <ul>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star no-star"></i>
+              </ul>
+              <div class="progress">
+                <div class="parent-progress">
+                  <div class="child-progress">
+                    <h5 id="progress-percentage-1">27%</h5>
+                  </div>
+                </div>
+                <a href="#">
+                  <i class="fi fi-rs-play game-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="game-card">
+            <i class="fi fi-rs-fire-flame-curved flame">
+              <span class="num-of-downloads">478</span>
+            </i>
+            <img src="./images/Harrypotter.jpg" alt="Harrypotter" class="tournaments-img">
+            <div class="overlay">
+              <h5>Harry Potter</h5>
+              <h5 class="viewers-num">45.2k Viewers</h5>
+              <ul>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </ul>
+              <div class="progress move-left">
+                <div class="parent-progress">
+                  <div class="child-progress">
+                    <h5 id="progress-percentage-2">45%</h5>
+                  </div>
+                </div>
+                <a href="#">
+                  <i class="fi fi-rs-play game-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="game-card">
+            <i class="fi fi-rs-fire-flame-curved flame">
+              <span class="num-of-downloads">96</span>
+            </i>
+            <img src="./images/mortal kmbat1.jpg" alt="mortal-kombat" class="tournaments-img">
+            <div class="overlay">
+              <h5>Mortal Kombat 11</h5>
+              <h5 class="viewers-num">12.5k Viewers</h5>
+              <ul>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star no-star"></i>
+                <i class="fi fi-rs-star no-star"></i>
+              </ul>
+              <div class="progress">
+                <div class="parent-progress">
+                  <div class="child-progress">
+                    <h5 id="progress-percentage-3">9%</h5>
+                  </div>
+                </div>
+                <a href="#">
+                  <i class="fi fi-rs-play game-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="border-line"></div>
+
+  <div class="little-width">
+    <div id="finance-header">
+      <h4>Financial Header</h4>
+      <i class="fi fi-rs-stats"></i>
+    </div>
+    <h6>Monthly Analysis</h6>
+
+    <div id="financial-analysis">
+      <div id="financial-chart">
+        <h4>Total Income</h4>
+        <h4>$180</h4>
+      </div>
+    </div>
+
+    <div>
+      <div class="expenses-flex">
+        <div class="expenses">
+          <div class="rounded-circle expense"></div>
+          <h4>Expenses <span class="expenses-color">(79%)</span></h4>
+        </div>
+          
+        <div class="expenses">
+          <div class="rounded-circle income"></div>
+          <h4>Income <span class="expenses-color">(21%)</span></h4>
+        </div>
+      </div>
+      
+       <div class="expenses-flex">
+        <div class="expenses">
+          <div class="rounded-circle other"></div>
+        <h4>Other <span class="expenses-color">(21%)</span></h4>
+        </div>
+        
+        <div class="expenses">
+          <div class="rounded-circle gifts"></div>
+          <h4>Gifts <span class="expenses-color">(21%)</span></h4>
+       </div> 
+      </div>
+    </div>
+
+    <button id="analysis-button">Analysis</button>
+
+    <div id="notification-sect">
+      <h4>Notification (3)</h4>
+      <div>
+        <img src="./images/Group 2.svg" alt="clash-of-clans" id="clash-of-clan">
+        <div id="update">
+          <h4>Clash Of Clans</h4>
+        <h5>You need to update clash of clans.</h5>
+          <h5>otherwise you will not have access to it.</h5>
+          <button id="update-btn">Game Update</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </section>
+  <h3 class="display-message">View On Screen greater than 1000px</h3>
+  <script src="./index.js"></script>
+  </body>
+
+  </html>
