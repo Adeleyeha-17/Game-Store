@@ -373,6 +373,7 @@ option {
   border-radius: 25px;
   background: #252945;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .trends::before {
@@ -399,31 +400,29 @@ option {
 }
 
 .bottom-img:nth-child(1) {
-  position: relative;
-  top: -50px;
+  position: absolute;
+  top: 100px;
   left: -25px;
 }
 
 .bottom-img:nth-child(2) {
-  position: relative;
-  top: 75px;
-  left: 45px;
+  position: absolute;
+  top: 240px;
+  left: 95px;
   width: 30px;
   height: 30px;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
 .bottom-img:nth-child(3) {
-  position: relative;
-  top: -135px;
-  left: 36px;
+  position: absolute;
+  top: 13px;
+  left: 106px;
 }
 
 .bottom-img:nth-child(4) {
   position: relative;
-  top: -112px;
-  left: -60px;
+  top: -100px;
+  left: 60px;
   width: 30px;
   height: 30px;
   object-fit: cover;
@@ -432,20 +431,20 @@ option {
 
 .bottom-img:nth-child(5) {
   position: relative;
-  top: 47px;
-  left: -10px;
+  top: 60px;
+  left: 125px;
 }
 
 .bottom-img:nth-child(6) {
   position: relative;
-  top: -130px;
-  left: 190px;
+  top: -70px;
+  left: 100px;
 }
 
 .bottom-img:nth-child(7) {
   position: relative;
-  top: 20px;
-  left: -20px;
+  top: 85px;
+  left: -105px;
 }
 
 #tournaments-section {
@@ -787,34 +786,56 @@ option {
   .trends {
     width: 210px;
     height: 210px;
+    overflow: hidden;
   }
 
-  .bottom-img:nth-child(3) {
-    top: -125px;
-    left: 36px;
+  .bottom-img:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    left: -25px;
   }
-
-  .bottom-img:nth-child(4) {
-    top: -102px;
-    left: -60px;
+  
+  .bottom-img:nth-child(2) {
+    position: absolute;
+    top: 230px;
+    left: 95px;
     width: 30px;
     height: 30px;
   }
-
+  
+  .bottom-img:nth-child(3) {
+    position: absolute;
+    top: 13px;
+    left: 106px;
+  }
+  
+  .bottom-img:nth-child(4) {
+    position: relative;
+    top: -100px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
   .bottom-img:nth-child(5) {
-    top: 52px;
-    left: -10px;
+    position: relative;
+    top: 50px;
+    left: 118px;
   }
-
+  
   .bottom-img:nth-child(6) {
-    left: 185px;
+    position: relative;
+    top: -70px;
+    left: 93px;
   }
-
+  
   .bottom-img:nth-child(7) {
-    top: 20px;
-    left: -20px;
+    position: relative;
+    top: 75px;
+    left: -105px;
   }
-
   #tournaments-section {
     gap: 12px;
   }
@@ -956,38 +977,55 @@ option {
   .trends {
     width: 200px;
     height: 200px;
+    overflow: hidden;
   }
 
+  .bottom-img:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    left: -25px;
+  }
+  
   .bottom-img:nth-child(2) {
-    top: 65px;
-    left: 45px;
-  }
-
-
-  .bottom-img:nth-child(3) {
-    top: -125px;
-    left: 36px;
-  }
-
-  .bottom-img:nth-child(4) {
-    top: -102px;
-    left: -60px;
+    position: absolute;
+    top: 220px;
+    left: 85px;
     width: 30px;
     height: 30px;
   }
-
+  
+  .bottom-img:nth-child(3) {
+    position: absolute;
+    top: 13px;
+    left: 106px;
+  }
+  
+  .bottom-img:nth-child(4) {
+    position: relative;
+    top: -100px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
   .bottom-img:nth-child(5) {
-    top: -12px;
-    left: 140px;
+    position: relative;
+    top: 43px;
+    left: 108px;
   }
-
+  
   .bottom-img:nth-child(6) {
-    left: 125px;
+    position: relative;
+    top: -70px;
+    left: 80px;
   }
-
+  
   .bottom-img:nth-child(7) {
-    top: 15px;
-    left: -70px;
+    position: relative;
+    top: 65px;
+    left: -105px;
   }
 
   #tournaments-section {
