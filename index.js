@@ -7,8 +7,7 @@ const volBtn = document.getElementById("volume-button");
 const vidLength = document.querySelector(".video-length");
 const viewersBtn = document.getElementById("live-streamers");
 const viewersNum = document.getElementById("toggle-number");
-const displayScreen = document.querySelector('.display');
-const displayMessage = document.querySelector(".display-message")
+const displayScreen = document.querySelector('body');
 
 // Play  and pause the video when the play button is clicked
 playBtn.addEventListener("click", () => {
@@ -95,20 +94,14 @@ viewersBtn.addEventListener("click", function () {
 });
 
 
-// Smaller width doesn't get shown
-const minWidth = 1000;
-const display = window.innerWidth >= minWidth;
+// // Smaller width doesn't get shown
+// const minWidth = 1000 + "px";
 
-function handleGameStoreVisibility() {
-  displayScreen.style.display = display ? 'block' : 'none';
-}
+// function handleGameStoreVisibility() {
+//   const displayValue = window.innerWidth <= minWidth ? 'none' : 'block';
+//   document.body.style.display = displayValue;
+// }
 
-if(display) {
-  displayScreen.classList.remove("display-message")
-} else {
-  displayScreen.classList.add("display-message")
-}
+// window.addEventListener('resize', handleGameStoreVisibility);
+// document.addEventListener('DOMContentLoaded', handleGameStoreVisibility);
 
-window.addEventListener('resize', handleGameStoreVisibility);
-
-document.addEventListener('DOMContentLoaded', handleGameStoreVisibility);
