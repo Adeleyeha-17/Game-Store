@@ -602,6 +602,9 @@ option {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-right-color: #4874ef;
+  border-left-color: #e1678f;
+  border-top-color: #cad686;
 }
 
 #financial-chart h4:nth-child(1) {

@@ -41,6 +41,7 @@ video.addEventListener("loadedmetadata", function () {
     .toString()
     .padStart(2, "0");
   const seconds = Math.floor(duration % 60)
+  
     .toString()
     .padStart(2, "0");
 
@@ -49,7 +50,7 @@ video.addEventListener("loadedmetadata", function () {
   video.addEventListener("timeupdate", function () {
     const currentTime = video.currentTime;
     const remainingTime = duration - currentTime;
-   
+
     const remainingHours = Math.floor(remainingTime / 3600)
       .toString()
       .padStart(2, "0");
@@ -64,7 +65,7 @@ video.addEventListener("loadedmetadata", function () {
     const timeStamp = `${remainingHours}:${remainingMinutes}:${remainingSeconds}`
     vidLength.textContent = timeStamp;
 
-    if(timeStamp === "00:00:00"){
+    if (timeStamp === "00:00:00") {
       playBtn.classList.replace("fi-rs-pause", "fi-rs-play")
     }
   });
@@ -91,5 +92,3 @@ viewersBtn.addEventListener("click", function () {
     viewersBtn.classList.replace("fi fi-br-eye-crossed", "fi fi-rs-eye");
   }
 });
-
-
